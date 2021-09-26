@@ -15,17 +15,14 @@ function App() {
   return (
     <UserProvider>
       <Router>
-        <Navbar/>
-        
-        <div>
+      <Navbar/>
+      
         <Switch>
-          <Route path="/beranda" component={Beranda}/>
-          <Route path="/" exact component={LoginPages} />
-          <Route path="/register" component={RegisterPages} />
+          <Route path="/beranda" component={Beranda}/> />
         </Switch>
-        </div>
-
-        <Footer/>
+        
+      <Footer />
+      
       </Router>
     </UserProvider>
   );
